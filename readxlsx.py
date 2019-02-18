@@ -2,7 +2,7 @@ import openpyxl
 
 wb = openpyxl.load_workbook("35F_34东-温湿度_湿度趋势分析_2019-02-01至2019-02-13.xlsx")
 ws1 = wb.active
-print(type(ws1))
+print(ws1[3][3].value)
 print(type(wb))
 print(wb.sheetnames)
 print(ws1.title)
